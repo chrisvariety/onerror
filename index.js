@@ -43,7 +43,7 @@ function onerror(app, options) {
     // don't do anything if there is no error.
     // this allows you to pass `this.onerror`
     // to node-style callbacks.
-    if (null == err) {
+    if (!err) {
       return;
     }
 
